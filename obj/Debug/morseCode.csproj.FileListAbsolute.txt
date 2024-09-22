@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\morseCode\morseCode\bin\Debug\morseCode.exe.config
+C:\Users\user\source\repos\morseCode\morseCode\bin\Debug\morseCode.exe
+C:\Users\user\source\repos\morseCode\morseCode\bin\Debug\morseCode.pdb
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\MainWindow.g.cs
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\Window1.g.cs
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\App.g.cs
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode_MarkupCompile.cache
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode_MarkupCompile.lref
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\MainWindow.baml
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\Window1.baml
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.g.resources
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.Properties.Resources.resources
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.csproj.GenerateResource.cache
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.exe
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.pdb
