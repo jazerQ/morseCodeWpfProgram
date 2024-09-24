@@ -23,10 +23,18 @@ namespace morseCode
         public MainWindow()
         {
             InitializeComponent();
-            code.Click += Button_Click;
+            code.Click += Button1_Click;
+            decode.Click += Button2_Click;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+            this.Close();
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
         {
             Window1 window1 = new Window1();
             window1.Show();

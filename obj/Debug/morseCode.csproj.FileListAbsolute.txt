@@ -15,3 +15,5 @@ C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.csproj.Genera
 C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.exe
 C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\morseCode.pdb
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\Window2.g.cs
+C:\Users\user\source\repos\morseCode\morseCode\obj\Debug\Window2.baml
