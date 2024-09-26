@@ -28,6 +28,15 @@ namespace morseCode
             btnCopyMorse.Click += BtnCopyMorse_Click;
             btnCopyText.Click += BtnCopyText_Click;
             BtnClose.Click += BtnClose_Click;
+            BtnBack.Click += BtnBack_Click;
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+            
         }
 
         private void BtnClose_Click(object sender, RoutedEventArgs e)

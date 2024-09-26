@@ -117,5 +117,9 @@
     <Resource Include="Assets\close2.png" />
     <Resource Include="Assets\pngwing.com.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\backIn.png" />
+    <Resource Include="Assets\backOff.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
