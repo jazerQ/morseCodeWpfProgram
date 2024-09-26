@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace morseCode
 {
@@ -23,5 +24,24 @@ namespace morseCode
         {
             InitializeComponent();
         }
+        /*private void MyTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            txt = myTextBox.Text;
+            string newTxt = "";
+            char[] arr = txt.ToCharArray();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                string letter = arr[i].ToString();
+                if (morse.ContainsKey(letter))
+                {
+                    newTxt += " " + morse[letter];
+                }
+                else
+                {
+                    newTxt += letter;
+                }
+            }
+            Eng.Text = newTxt;
+        }*/
     }
 }

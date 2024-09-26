@@ -19,46 +19,7 @@ namespace morseCode
     /// </summary>
     public partial class Window2 : Window
     {
-        private string txt;
-        private Dictionary<string, string> morse = new Dictionary<string, string>()
-        {
-            { "a",".-" },
-            { "b", "-..."},
-            { "c", "-.-."},
-            {"d", "-.."},
-            { "e", "." },
-            { "f", "..-." },
-            { "g", "--."},
-            { "h", "...."},
-            { "i", ".."},
-            { "j", ".---" },
-            { "k", "-.-"},
-            { "l", ".-.."},
-            { "m", "--"},
-            { "n", "-."},
-            { "o", "---"},
-            { "p", ".--."},
-            { "q", "--.-"},
-            { "r", ".-."},
-            { "s", "..."},
-            { "t", "-"},
-            { "u", "..-"},
-            { "v", "...-"},
-            { "w", ".--"},
-            { "x", "-..-"},
-            { "y", "-.--"},
-            { "z", "--.."},
-            { "1", ".----"},
-            { "2", "..---"},
-            { "3", "...--"},
-            { "4", "....-"},
-            { "5", "....."},
-            { "6", "-...."},
-            { "7", "--..."},
-            { "8", "---.."},
-            { "9", "----."},
-            { "0", "-----"}
-        };
+        
         public Window2()
         {
             InitializeComponent();
@@ -69,11 +30,15 @@ namespace morseCode
         {
             txt = myTextBox.Text;
             string newTxt = "";
-            char[] arr = txt.ToCharArray();
+            string[] arr = txt.Split(' ');
             for (int i = 0; i < arr.Length; i++) {
-                string letter = arr[i].ToString();
-                if (morse.ContainsKey(letter)) {
-                    newTxt += " "+morse[letter];
+                string letter = arr[i];
+                if (morse2.ContainsKey(letter)) {
+                    newTxt += morse2[letter];
+                }
+                else if( letter == "")
+                {
+                    newTxt += " ";
                 }
                 else
                 {
