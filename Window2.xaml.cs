@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
 namespace morseCode
 {
@@ -24,6 +25,36 @@ namespace morseCode
         {
             InitializeComponent();
             myTextBox.TextChanged += MyTextBox_TextChanged;
+            btnCopyMorse.Click += BtnCopyMorse_Click;
+            btnCopyText.Click += BtnCopyText_Click;
+        }
+
+        private void BtnCopyText_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(Eng.Text);
+            DoubleAnimation fadeIn = new DoubleAnimation(0, 0.8, TimeSpan.FromSeconds(0.3));
+            DoubleAnimation fadeOut = new DoubleAnimation(0.8, 0, TimeSpan.FromSeconds(0.5));
+
+            fadeIn.Completed += (s, a) =>
+            {
+                ImageControl2.BeginAnimation(Image.OpacityProperty, fadeOut);
+            };
+
+            ImageControl2.BeginAnimation(Image.OpacityProperty, fadeIn);
+        }
+
+        private void BtnCopyMorse_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(myTextBox.Text);
+            DoubleAnimation fadeIn = new DoubleAnimation(0, 0.8, TimeSpan.FromSeconds(0.3));
+            DoubleAnimation fadeOut = new DoubleAnimation(0.8, 0, TimeSpan.FromSeconds(0.5));
+
+            fadeIn.Completed += (s, a) =>
+            {
+                ImageControl1.BeginAnimation(Image.OpacityProperty, fadeOut);
+            };
+
+            ImageControl1.BeginAnimation(Image.OpacityProperty, fadeIn);
         }
 
         private void MyTextBox_TextChanged(object sender, TextChangedEventArgs e)
