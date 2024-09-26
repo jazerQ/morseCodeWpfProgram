@@ -121,5 +121,11 @@
     <Resource Include="Assets\backIn.png" />
     <Resource Include="Assets\backOff.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
