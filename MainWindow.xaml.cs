@@ -25,6 +25,12 @@ namespace morseCode
             InitializeComponent();
             code.Click += Button1_Click;
             decode.Click += Button2_Click;
+            BtnClose.Click += BtnClose_Click;
+        }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)

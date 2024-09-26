@@ -27,6 +27,12 @@ namespace morseCode
             myTextBox.TextChanged += MyTextBox_TextChanged;
             btnCopyMorse.Click += BtnCopyMorse_Click;
             btnCopyText.Click += BtnCopyText_Click;
+            BtnClose.Click += BtnClose_Click;
+        }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
         private void BtnCopyText_Click(object sender, RoutedEventArgs e)
