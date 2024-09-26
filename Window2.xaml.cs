@@ -74,13 +74,13 @@ namespace morseCode
 
         private void MyTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            txt = myTextBox.Text;
+            MorseAlphabit.txt = myTextBox.Text;
             string newTxt = "";
-            string[] arr = txt.Split(' ');
+            string[] arr = MorseAlphabit.txt.Split(' ');
             for (int i = 0; i < arr.Length; i++) {
                 string letter = arr[i];
-                if (morse2.ContainsKey(letter)) {
-                    newTxt += morse2[letter];
+                if (MorseAlphabit.morse2.ContainsKey(letter)) {
+                    newTxt += MorseAlphabit.morse2[letter];
                 }
                 else if( letter == "")
                 {

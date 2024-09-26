@@ -7,10 +7,10 @@ using System.Windows;
 
 namespace morseCode
 {
-    public partial class Window2 : Window
+    public static class MorseAlphabit
     {
-        private string txt;
-        private Dictionary<string, string> morse1 = new Dictionary<string, string>()
+        public static string txt;
+        public static Dictionary<string, string> morse1 = new Dictionary<string, string>()
         {
             { "a",".-" },
             { "b", "-..."},
@@ -49,7 +49,7 @@ namespace morseCode
             { "9", "----."},
             { "0", "-----"}
         };
-        private Dictionary<string, string> morse2 = new Dictionary<string, string>()
+        public static Dictionary<string, string> morse2 = new Dictionary<string, string>()
         {
             { ".-", "a" },
             {  "-...", "b"},
